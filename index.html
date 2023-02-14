@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Library</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Small Library</h1>
+      </div>
+      <div class="insert-bar">
+        <form action="" method="post">
+          <div class="form-title">
+            <!-- <label for="title"></label><br /> -->
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Title"
+            /><br />
+          </div>
+          <div class="form-author">
+            <!-- <label for="author">Author:</label><br /> -->
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="Author"
+            /><br />
+          </div>
+          <div class="form-pages">
+            <!-- <label for="pages">Pages:</label><br /> -->
+            <input
+              type="text"
+              id="pages"
+              name="pages"
+              placeholder="Pages"
+            /><br />
+          </div>
+          <div class="form-read">
+            <p>Read?</p>
+            <label for="yes" id="yeslabel">Yes</label><br />
+            <input type="radio" id="yes" name="status" /><br />
+            <label for="no" id="nolabel">No</label><br />
+            <input type="radio" id="no" name="status" /><br />
+          </div>
+          <div class="form-submit">
+            <button class="add-book">ADD BOOK</button>
+          </div>
+        </form>
+      </div>
+      <div class="display-library">
+        <div class="fields">
+          <div class="field-title">Title</div>
+          <div class="field-author">Author</div>
+          <div class="field-page">NumOfPages</div>
+          <div class="field-read">Read?</div>
+          <div class="field-read">Edit</div>
+        </div>
+        <!-- test entry start -->
+        <!-- <div class="data-entry">
+          <div class="entry-title1">Book Name</div>
+          <div class="entry-author1">Book Author</div>
+          <div class="entry-page1">Book NumOfPages</div>
+          <div class="entry-read1">Yes</div>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Del</button>
+        </div> -->
+        <!-- test entry end -->
+      </div>
+    </div>
+  </body>
+</html>
