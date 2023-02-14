@@ -36,7 +36,7 @@ function addBookToLibrary() {
   checkYes.checked = false;
   checkNo.checked = false;
 
-  const deleteBtn = document.querySelector(".delete-btn");
+  const deleteBtn = element.querySelector(".delete-btn");
   deleteBtn.addEventListener("click", function (e) {
     const element = e.currentTarget.parentElement;
     displayLibrary.removeChild(element);
