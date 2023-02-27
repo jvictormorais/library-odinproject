@@ -44,8 +44,14 @@ function addBookToLibrary() {
   });
 }
 
+const form = document.querySelector("form");
+
 addBookBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  console.log("clicked");
-  addBookToLibrary();
+  if (!form.checkValidity()) {
+    alert("All fields required");
+  } else {
+    console.log("clicked");
+    addBookToLibrary();
+  }
 });
